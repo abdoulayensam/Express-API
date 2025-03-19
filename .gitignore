@@ -1,0 +1,6 @@
+#ignorons tous les fichiers de node_modules
+node_modules/
+README.pdf
+
+# Les variables d'environment
+.env
