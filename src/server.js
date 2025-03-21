@@ -5,14 +5,14 @@ dotenv.config();
 import pool from './database.js';
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 
 app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.status(200).send("Bienvenue sur notre api portfolio"); 
+    res.status(200).send({"Message": "Bienvenue sur notre api backend de portfolio"}); 
 });
 
 app.post("/submit-form", async (req, res) => {
